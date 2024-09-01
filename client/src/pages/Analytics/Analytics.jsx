@@ -1,6 +1,6 @@
 import React, {useState, useContext, useEffect} from "react";
 import styles from "./Analytics.module.css";
-import AnalyticItem from "../../components/Analytics/AnalyticItem/Analyticitem.jsx";
+import AnalyticItem from "../../components/Analytics/AnalyticItem/AnalyticItem.jsx";
 import EditQuizModal from "../../components/Analytics/EditQuizModal/EditQuizModal.jsx";
 import QWAnalytics from "../QWAnalytics/QWAnalytics.jsx";
 import AnalyticsContext from "../../context/AnalyticsContext";
