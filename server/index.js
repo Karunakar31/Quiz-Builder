@@ -10,7 +10,7 @@ connectDB();
 const app = express();
 let port = process.env.PORT || 9000;
 
-app.use(cors({origin: "https://form-bot-mern.vercel.app", credentials: true}));
+app.use(cors({origin: "https://quiz-builder-mern.vercel.app", credentials: true}));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes());
