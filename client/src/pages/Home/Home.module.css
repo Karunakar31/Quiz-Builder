@@ -1,0 +1,10 @@
+.home{
+    overflow-x: hidden;
+    display: flex;
+}
+
+.homeright{
+    width: 80%;
+    padding: 2rem 8rem;
+}
+

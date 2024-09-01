@@ -1,0 +1,48 @@
+
+.boxes{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes .box{
+    width: 25%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxpoll h1{
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.boxpoll h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.boxpoll{
+    width: 25%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    flex-direction: row;
+    justify-content: center;
+    width: 15%;
+}
+
+.boxpoll h1{
+    margin-right: 0.8rem;
+}

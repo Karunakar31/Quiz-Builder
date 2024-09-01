@@ -1,0 +1,15 @@
+body {
+    background-color: #041325;
+  }
+  
+  .quizcontainer {
+    width: 65%;
+    background-color: white;
+    border-radius: 12px;
+    height: 70vh;
+    margin: 5rem auto;
+    padding: 2rem;
+  }
+  
+
+  

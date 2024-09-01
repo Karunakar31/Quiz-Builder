@@ -1,0 +1,21 @@
+.quizcompleted {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quizcompleted h1 {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+  
+  .quizcompleted .score {
+    color: #60b84b;
+  }
+  
+  .quizcompleted .thankyou {
+    font-size: 4rem;
+    text-align: center;
+  }
