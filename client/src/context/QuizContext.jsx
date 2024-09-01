@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 const QuizContext = createContext();
 let url = import.meta.env.VITE_URL;
-let clientUrl = import.meta.env.VITE_CLIENT;
+let clientUrl = import.meta.env.VITE_URL;
 
 const QuizState = (props) => {
 
