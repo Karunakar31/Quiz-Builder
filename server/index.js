@@ -10,21 +10,9 @@ connectDB();
 const app = express();
 let port = process.env.PORT || 9000;
 
-
-const corsOptions = {
-  origin: 'https://quiz-builder-front.vercel.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true, 
-};
-
-
-app.use(cors(corsOptions));
-
-
-app.options('*', cors(corsOptions));
-
+app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes());
 
 app.listen(port, () => {
