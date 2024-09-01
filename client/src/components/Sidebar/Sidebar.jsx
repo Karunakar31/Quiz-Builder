@@ -13,7 +13,7 @@ const Sidebar = (props) => {
   const handleLogoutClick = async ()=>{
     let res = await handleLogout();
     if(res){
-      navigate('/login')
+      navigate('/auth')
     }
   }
 
