@@ -28,7 +28,7 @@ const GlobalState = (props) => {
   const login = async (email, password) => {
     setProgress(20);
     try {
-      const response = await fetch(`${url}/api/auth/login`, {
+      const response = await fetch('/api/auth/login', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
