@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 const GlobalContext = createContext();
-let url = import.meta.env.VITE_URL;
+let url = import.meta.env.VITE_API_BASE_URL;
 
 const GlobalState = (props) => {
   const [progress, setProgress] = useState(0);

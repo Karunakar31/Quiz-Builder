@@ -2,8 +2,8 @@ import { createContext, useState } from "react";
 import { toast } from "react-toastify";
 
 const AnalyticsContext = createContext();
-let url = import.meta.env.VITE_URL;
-let clientUrl = import.meta.env.VITE_CLIENT;
+let url = import.meta.env.VITE_API_BASE_URL;
+let clientUrl = import.meta.env.VITE_API_BASE_URL;
 
 const AnalyticsState = (props) => {
 

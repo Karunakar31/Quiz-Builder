@@ -2,8 +2,8 @@ import { createContext, useState } from "react";
 import { toast } from "react-toastify";
 
 const QuizContext = createContext();
-let url = import.meta.env.VITE_URL;
-let clientUrl = import.meta.env.VITE_URL;
+let url = import.meta.env.VITE_API_BASE_URL;
+let clientUrl = import.meta.env.VITE_API_BASE_URL;
 
 const QuizState = (props) => {
 
