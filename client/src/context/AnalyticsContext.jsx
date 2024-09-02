@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 
 const AnalyticsContext = createContext();
 let url = import.meta.env.VITE_API_BASE_URL;
-let clientUrl = import.meta.env.VITE_API_BASE_URL;
+let clientUrl = import.meta.env.VITE_API_CLIENT_URL;
 
 const AnalyticsState = (props) => {
 
