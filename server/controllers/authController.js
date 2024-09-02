@@ -15,8 +15,12 @@ const convertToK = (num) => {
   return num > 999 ? (num / 1000).toFixed(1) + "K" : num;
 };
 
-const createUser = async (req, res) => {
-  let success = false;
+  const createUser = async (req, res) => {
+    let success = false;
+  
+    if (!req.body || !req.body.name || !req.body.email || !req.body.password) {
+      return res.json({ success, error: "Missing required fields!" });
+    }
 
   let {name, email, password} = req.body;
   name = name.toString().toLowerCase();
@@ -67,6 +71,11 @@ const createUser = async (req, res) => {
 
 const loginUser = async (req, res) => {
   let success = false;
+
+  if (!req.body || !req.body.email || !req.body.password) {
+    return res.json({ success, error: "Missing required fields!" });
+  }
+
   let { email, password } = req.body;
   email = email.toString().toLowerCase();
   try {

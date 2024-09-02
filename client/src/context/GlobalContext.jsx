@@ -28,7 +28,7 @@ const GlobalState = (props) => {
   const login = async (email, password) => {
     setProgress(20);
     try {
-      const response = await fetch('/api/auth/login', {
+      const response = await fetch(`${url}/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -144,6 +144,7 @@ const GlobalState = (props) => {
   }
 
   const handleLogout = () => {
+    console.log("logout");
     localStorage.removeItem("token");
     setIsAuthenticated(false);
     setUser({ name: "", email: "", mobile: "" });
